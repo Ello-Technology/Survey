@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey</title>
+    <meta charset="utf-8">
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-database.js"></script>
+
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.js"></script>
+    
+    <script src="https://surveyjs.azureedge.net/0.12.19/survey.react.js"></script>
+    
+    
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-picker/0.3.0/image-picker.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/image-picker/0.3.0/image-picker.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+
+<pre id="object"></pre>
+
+
+<div style="background-color: black;">
+    <img style=" max-width: 40%;
+    height: auto;
+    width: auto\9;
+margin-top: 20px;
+margin-bottom: 20px;
+  left: 50%;" src="ElloSVG.svg">
+</div>
+    <div>
+    <div style="width: 100%; position: absolute;" id="surveyElement"></div>
+
+    </div>
+    <div id="surveyroot"></div>
+    <div id="surveyResult"></div>
+    <script type="text/babel" src="./index.js"></script>
+</body>
+
+</html>

@@ -4,7 +4,7 @@ Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
 
 Survey.JsonObject.metaData.addProperty("dropdown", {name: "renderAs", default: "standard", choices: ["standard", "imagepicker"]});
 
-window.survey = new Survey.Model({ title: 'Satisfaction Survey', showProgressBar: 'top', pages: [{
+window.survey = new Survey.Model({ title: 'Customer Expereince Survey - We thank you for taking the time to do this quick survey and we appreciate you being honest, so that we may use this information to better our quality of service. Please note the details of this survey will remain anonymous.', showProgressBar: 'top', pages: [{
     questions: [
 
         {
@@ -21,102 +21,82 @@ window.survey = new Survey.Model({ title: 'Satisfaction Survey', showProgressBar
         name: "department",
         rateValues: [
             {
-                value: "ServiceDesk",
-                text: "Service Desk"
+                value: "TechnicalTeam",
+                text: "Technical Team"
             },
             {
-                value: "Sales",
-                text: "Sales"
+                value: "SalesTeam",
+                text: "Sales Team"
             },
             {
-                value: "Projects",
-                text: "Projects"
-            },
-            {
-                value: "Accounts",
-                text: "Accounts"
-            },
-		{
-                value: "Support",
-                text: "Support"
+                value: "AdminTeam",
+                text: "Admin Team"
             }
         ],
         title: "The Ello represeantitve who assisted you falls in which department?"
     },
 
-    { type: "dropdown", name: "Service Desk", visibleIf: "{department} == ServiceDesk", renderAs: "imagepicker", title: "Please select the Ello representative:",
+    { type: "dropdown", name: "Technical Team", visibleIf: "{department} == TechnicalTeam", renderAs: "imagepicker", title: "Please select the Ello representative:",
         choices: [
-            {value: "Dehan", text: "images/Dehan.png"},
-            {value: "Michael", text: "images/Michael.png"},
+            {value: "Aphiwe", text: "images/Aphiwe.png"},
             {value: "Awi", text: "images/Awi.png"},
-            {value: "Kyle", text: "images/Kyle.png"},
-            {value: "Jayson", text: "images/Jayson.png"},
-            {value: "Les", text: "images/Les.png"},
-            {value: "Petrie", text: "images/Petrie.png"},
-            {value: "Tyrone", text: "images/Tyrone.png"},
+            {value: "Bennie", text: "images/Bennie.png"},
             {value: "Danté", text: "images/Danté.png"},
-            {value: "George", text: "images/George.png"}
-
-
-        ]
-    },
-
-    { type: "dropdown", name: "Sales", visibleIf: "{department} == Sales", renderAs: "imagepicker", title: "Please select to customer representative in question:",
-        choices: [
-             {value: "Rory", text: "images/Rory.png"},
-            {value: "Francois", text: "images/Francois.png"},
-            {value: "Alex", text: "images/Alexander.png"},
-            {value: "WernerS", text: "images/WernerS.png"},
-            {value: "Anneli", text: "images/Anneli.png"},
-            {value: "Sharné", text: "images/Sharné.png"},
-            {value: "Hannelie", text: "images/Hannelie.png"},
-            {value: "Jonathan", text: "images/Jonathan.png"},
-            {value: "Deon", text: "images/Deon.png"}
-        ]
-    },
-
-    { type: "dropdown", name: "Projects", visibleIf: "{department} == Projects", renderAs: "imagepicker", title: "Please select to customer representative in question:",
-        choices: [
+            {value: "Evert", text: "images/Evert.png"},
+            {value: "George", text: "images/George.png"},
+            {value: "Jayson", text: "images/Jayson.png"},
+            {value: "Kyle", text: "images/Kyle.png"},
+            {value: "Tyrone", text: "images/Tyrone.png"},
+            {value: "Dehan", text: "images/Dehan.png"},
+            {value: "WernerP", text: "images/WernerP.png"},
+            {value: "Michael", text: "images/Michael.png"},
+            {value: "Petrie", text: "images/Petrie.png"},
             {value: "Les", text: "images/Les.png"},
-            {value: "Werner", text: "images/WernerP.png"}
+            {value: "Davin", text: "images/Davin.png"},
+            {value: "Garry", text: "images/Garry.png"}
+
+         ]
+    },
+
+    { type: "dropdown", name: "Sales Team", visibleIf: "{department} == SalesTeam", renderAs: "imagepicker", title: "Please select to customer representative in question:",
+        choices: [
+            {value: "Alex", text: "images/Alexander.png"},
+            {value: "Hannelie", text: "images/Hannelie.png"},
+            {value: "Sharné", text: "images/Sharné.png"},
+            {value: "Jonathan", text: "images/Jonathan.png"},
+            {value: "Anneli", text: "images/Anneli.png"},
+            {value: "Deon", text: "images/Deon.png"},
+            {value: "Hesphia", text: "images/Hesphia.png"},
+            {value: "WernerS", text: "images/WernerS.png"},
+            {value: "Rory", text: "images/Rory.png"},
+            {value: "Francois", text: "images/Francois.png"},
+            {value: "Amber", text: "images/Amber.png"}
         ]
     },
 
-    { type: "dropdown", name: "Accounts", visibleIf: "{department} == Accounts", renderAs: "imagepicker", title: "Please select to customer representative in question:",
+    { type: "dropdown", name: "Admin Team", visibleIf: "{department} == AdminTeam", renderAs: "imagepicker", title: "Please select to customer representative in question:",
         choices: [
-            {value: "Phillip", text: "images/Phillip.png"},
+            {value: "Kayla", text: "images/Kayla.png"},
+            {value: "Fatiema", text: "images/Fatiema.png"},
             {value: "Rory", text: "images/Marisha.png"},
-            {value: "Fatiema", text: "images/Fatiema.png"}
-
-        ]
-    },
-	     { type: "dropdown", name: "Support", visibleIf: "{department} == Support", renderAs: "imagepicker", title: "Please select the Ello representative:",
-        choices: [
-            {value: "Dehan", text: "images/Garry.png"},
-            {value: "Michael", text: "images/Amber.png"},
-            {value: "Awi", text: "images/Rozanne.png"},
-            {value: "Kyle", text: "images/Hesphia.png"},
-            {value: "Jayson", text: "images/Evert.png"},
-            {value: "Les", text: "images/Bennie.png"},
-            {value: "Petrie", text: "images/Aphiwe.png"},
-            {value: "Davin", text: "images/Davin.png"}
-
+            {value: "Phillip", text: "images/Phillip.png"}
 
         ]
     },
 
-        { type: "rating", name: "FriendlyAndHelpful", title: " Did you find the Ello representative was friendly and helpful?",
-            mininumRateDescription: "Not Satisfied", maximumRateDescription: "Completely satisfied" },
+
+        { type: "rating", name: "FriendlyAndHelpful", title: "Do you find the Ello representative you selected was friendly and helpful?",
+            mininumRateDescription: "Needs Improvement", maximumRateDescription: "Awesome Experience" },
         { type: "rating", name: "Urgency",
-            title: "When dealing with an ello representative, do you feel the way you were dealt with was with the urgency you expected?",
-            mininumRateDescription: "Not Satisfied", maximumRateDescription: "Completely Satisfied" },
+            title: "When dealing with the selected Ello representative, did you feel the urgency of your request was met?",
+            mininumRateDescription: "Needs Improvement", maximumRateDescription: "Awesome Experience" },
     { type: "rating", name: "Promise",
-        title: "Do you feel that the Ello representative kept there promise?",
-        mininumRateDescription: "Not Satisfied", maximumRateDescription: "Completely Satisfied" },
+        title: "Did you feel promises made by the Ello representative were met?",
+        mininumRateDescription: "Needs Improvement", maximumRateDescription: "Awesome Experience" },
 
 
 
-    { type: "comment", name: "suggestions", title:"Please suggest any improvements that Ello could make (optional):", }
+    { type: "comment", name: "suggestions", title:"Please take the time to make any suggestions of how we can improve your experience:" }
 ]}
 ]});
 

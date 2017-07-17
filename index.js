@@ -33,7 +33,7 @@ window.survey = new Survey.Model({ title: 'Customer Expereince Survey - We thank
                 text: "Admin Team"
             }
         ],
-        title: "The Ello represeantitve who assisted you falls in which department?"
+        title: "The Ello representative who assisted you falls in which department?"
     },
 
     { type: "dropdown", name: "Technical Team", visibleIf: "{department} == TechnicalTeam", renderAs: "imagepicker", title: "Please select the Ello representative:",

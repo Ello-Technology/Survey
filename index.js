@@ -49,10 +49,13 @@ window.survey = new Survey.Model({ title: 'Customer Experience Survey - We thank
             {value: "Tyrone", text: "images/Tyrone.png"},
             {value: "Dehan", text: "images/Dehan.png"},
             {value: "WernerP", text: "images/WernerP.png"},
-            {value: "Michael", text: "images/Michael.png"},
-            {value: "Petrie", text: "images/Petrie.png"},
-            {value: "Les", text: "images/Les.png"},
             {value: "Davin", text: "images/Davin.png"},
+            {value: "Les", text: "images/Les.png"},
+            {value: "Michael", text: "images/Michael.png"},
+
+            {value: "Petrie", text: "images/Petrie.png"},
+          
+            
             {value: "Garry", text: "images/Garry.png"}
 
          ]
@@ -62,14 +65,16 @@ window.survey = new Survey.Model({ title: 'Customer Experience Survey - We thank
         choices: [
             {value: "Alex", text: "images/Alexander.png"},
             {value: "Hannelie", text: "images/Hannelie.png"},
-            {value: "Sharné", text: "images/Sharné.png"},
+            {value: "Hesphia", text: "images/Hesphia.png"},
             {value: "Jonathan", text: "images/Jonathan.png"},
+            {value: "Sharné", text: "images/Sharné.png"},
+            {value: "WernerS", text: "images/WernerS.png"},
             {value: "Anneli", text: "images/Anneli.png"},
             {value: "Deon", text: "images/Deon.png"},
-            {value: "Hesphia", text: "images/Hesphia.png"},
-            {value: "WernerS", text: "images/WernerS.png"},
-            {value: "Rory", text: "images/Rory.png"},
+            
             {value: "Francois", text: "images/Francois.png"},
+            {value: "Rory", text: "images/Rory.png"},
+            
             {value: "Amber", text: "images/Amber.png"}
         ]
     },

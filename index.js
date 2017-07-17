@@ -85,18 +85,18 @@ window.survey = new Survey.Model({ title: 'Customer Experience Survey - We thank
     },
 
 
-        { type: "rating", name: "FriendlyAndHelpful", title: "Do you find the Ello representative you selected was friendly and helpful?",
+        { type: "rating", name: "FriendlyAndHelpful", title: "Did you find the Ello representative you selected friendly and helpful?",
             mininumRateDescription: "Needs Improvement", maximumRateDescription: "Awesome Experience" },
         { type: "rating", name: "Urgency",
             title: "When dealing with the selected Ello representative, did you feel the urgency of your request was met?",
             mininumRateDescription: "Needs Improvement", maximumRateDescription: "Awesome Experience" },
     { type: "rating", name: "Promise",
-        title: "Did you feel promises made by the Ello representative were met?",
+        title: "Did you feel that all promises made by the Ello representative were met?",
         mininumRateDescription: "Needs Improvement", maximumRateDescription: "Awesome Experience" },
 
 
 
-    { type: "comment", name: "suggestions", title:"Please take the time to make any suggestions of how we can improve your experience:" }
+    { type: "comment", name: "suggestions", title:"Please take the time to make any suggestions on how we can improve your experience:" }
 ]}
 ]});
 

@@ -64,14 +64,15 @@ window.survey = new Survey.Model({ title: 'Customer Experience Survey - We thank
     { type: "dropdown", name: "Sales Team", visibleIf: "{department} == SalesTeam", renderAs: "imagepicker", title: "Please select to customer representative in question:",
         choices: [
             {value: "Alex", text: "images/Alexander.png"},
+            {value: "Anneli", text: "images/Anneli.png"},
+            {value: "Deon", text: "images/Deon.png"},
+
             {value: "Hannelie", text: "images/Hannelie.png"},
             {value: "Hesphia", text: "images/Hesphia.png"},
             {value: "Jonathan", text: "images/Jonathan.png"},
             {value: "Sharné", text: "images/Sharné.png"},
             {value: "WernerS", text: "images/WernerS.png"},
-            {value: "Anneli", text: "images/Anneli.png"},
-            {value: "Deon", text: "images/Deon.png"},
-            
+                        
             {value: "Francois", text: "images/Francois.png"},
             {value: "Rory", text: "images/Rory.png"},
             

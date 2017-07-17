@@ -4,7 +4,7 @@ Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
 
 Survey.JsonObject.metaData.addProperty("dropdown", {name: "renderAs", default: "standard", choices: ["standard", "imagepicker"]});
 
-window.survey = new Survey.Model({ title: 'Customer Expereince Survey - We thank you for taking the time to do this quick survey and we appreciate you being honest, so that we may use this information to better our quality of service. Please note the details of this survey will remain anonymous.', showProgressBar: 'top', pages: [{
+window.survey = new Survey.Model({ title: 'Customer Experience Survey - We thank you for taking the time to do this quick survey and we appreciate you being honest, so that we may use this information to better our quality of service. Please note the details of this survey will remain anonymous.', showProgressBar: 'top', pages: [{
     questions: [
 
         {

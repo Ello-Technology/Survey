@@ -84,7 +84,7 @@ window.survey = new Survey.Model({ title: 'Customer Experience Survey - We thank
         choices: [
             {value: "Kayla", text: "images/Kayla.png"},
             {value: "Fatiema", text: "images/Fatiema.png"},
-            {value: "Rory", text: "images/Marisha.png"},
+            {value: "Marisha", text: "images/Marisha.png"},
             {value: "Phillip", text: "images/Phillip.png"}
 
         ]

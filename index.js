@@ -4,13 +4,13 @@ Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
 
 Survey.JsonObject.metaData.addProperty("dropdown", {name: "renderAs", default: "standard", choices: ["standard", "imagepicker"]});
 
-window.survey = new Survey.Model({ title: 'Customer Experience Survey - We thank you for taking the time to do this quick survey and we appreciate you being honest, so that we may use this information to better our quality of service. Please note the details of this survey will remain anonymous.', showProgressBar: 'top', pages: [{
+window.survey = new Survey.Model({ title: 'Rate your experience – Answer 3 questions', showProgressBar: 'top',showQuestionNumbers: 'off', pages: [{
     questions: [
 
         {
             type: "text",
             isRequired: true,
-            name: "Email:"
+            name: "Company Name:"
         }
 
 
@@ -31,7 +31,12 @@ window.survey = new Survey.Model({ title: 'Customer Experience Survey - We thank
             {
                 value: "AdminTeam",
                 text: "Admin Team"
-            }
+            },
+            {
+                value: "NetworkingTeam",
+                text: "Networking Team"
+            },
+
         ],
         title: "The Ello representative who assisted you falls in which department?"
     },
@@ -42,36 +47,30 @@ window.survey = new Survey.Model({ title: 'Customer Experience Survey - We thank
             {value: "Awi", text: "images/Awi.png"},
             {value: "Bennie", text: "images/Bennie.png"},
             {value: "Danté", text: "images/Danté.png"},
-            {value: "Evert", text: "images/Evert.png"},
+            {value: "Davin", text: "images/Davin.png"},
+            {value: "Dehan", text: "images/Dehan.png"},
+            {value: "Garry", text: "images/Garry.png"},
             {value: "George", text: "images/George.png"},
             {value: "Jayson", text: "images/Jayson.png"},
-            {value: "Kyle", text: "images/Kyle.png"},
-            {value: "Tyrone", text: "images/Tyrone.png"},
-            {value: "Dehan", text: "images/Dehan.png"},
-            {value: "WernerP", text: "images/WernerP.png"},
-            {value: "Davin", text: "images/Davin.png"},
+            {value: "Johan", text: "images/Johan.png"},
+            {value: "JonathanNaude", text: "images/JonathanN.png"},
             {value: "Les", text: "images/Les.png"},
             {value: "Michael", text: "images/Michael.png"},
-
             {value: "Petrie", text: "images/Petrie.png"},
-          
-            
-            {value: "Garry", text: "images/Garry.png"}
-
+            {value: "Tyrone", text: "images/Tyrone.png"},
+            {value: "WernerP", text: "images/WernerP.png"},
          ]
     },
 
     { type: "dropdown", name: "Sales Team", visibleIf: "{department} == SalesTeam", renderAs: "imagepicker", title: "Please select to customer representative in question:",
         choices: [
             {value: "Alex", text: "images/Alexander.png"},
-            {value: "Anneli", text: "images/Anneli.png"},
+
             {value: "Deon", text: "images/Deon.png"},
 
             {value: "Hannelie", text: "images/Hannelie.png"},
-            {value: "Hesphia", text: "images/Hesphia.png"},
-            {value: "Jonathan", text: "images/Jonathan.png"},
-            {value: "Sharné", text: "images/Sharné.png"},
-            {value: "WernerS", text: "images/WernerS.png"},
+
+            {value: "JonathanW", text: "images/Jonathan.png"},
                         
             {value: "Francois", text: "images/Francois.png"},
             {value: "Rory", text: "images/Rory.png"},
@@ -82,10 +81,19 @@ window.survey = new Survey.Model({ title: 'Customer Experience Survey - We thank
 
     { type: "dropdown", name: "Admin Team", visibleIf: "{department} == AdminTeam", renderAs: "imagepicker", title: "Please select to customer representative in question:",
         choices: [
+            {value: "Hesphia", text: "images/Hesphia.png"},
             {value: "Kayla", text: "images/Kayla.png"},
-            {value: "Fatiema", text: "images/Fatiema.png"},
+
             {value: "Marisha", text: "images/Marisha.png"},
-            {value: "Phillip", text: "images/Phillip.png"}
+            {value: "Rozanne", text: "images/Rozanne.png"},
+
+        ]
+    },
+    { type: "dropdown", name: "Networking Team", visibleIf: "{department} == NetworkingTeam", renderAs: "imagepicker", title: "Please select to customer representative in question:",
+        choices: [
+          {value: "Augustine", text: "images/Augustine.png"},
+          {value: "Russel", text: "images/Russel.png"},
+          {value: "Tino", text: "images/Tino.png"},
 
         ]
     },
@@ -102,9 +110,22 @@ window.survey = new Survey.Model({ title: 'Customer Experience Survey - We thank
 
 
 
-    { type: "comment", name: "suggestions", title:"Please take the time to make any suggestions on how we can improve your experience:" }
+    { type: "comment", name: "suggestions", title:"Have your say:" },
+
+    {
+        type: "radiogroup",
+        choices: [
+        "Yes",
+        "No"
+        ],
+        name: "Would you like to receive feedback Y / N  "
+     }
 ]}
-]});
+],
+  completedHtml: "<p><h4>Thank you for completing the survey!</h4></p><button onClick={window.location.reload()}>Retake Survey</button>"
+});
+
+
 
     //survey.onComplete.add(function(result) {
 	//document.querySelector('#surveyResult').innerHTML = "result: " + JSON.stringify(result.data);

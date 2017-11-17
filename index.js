@@ -118,7 +118,7 @@ window.survey = new Survey.Model({ title: 'Rate your experience – Answer 3 que
         "Yes",
         "No"
         ],
-        name: "Would you like to receive feedback Y / N  "
+        name: "Would you like to receive feedback Y or N  ",
      }
 ]}
 ],

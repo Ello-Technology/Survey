@@ -118,8 +118,12 @@ window.survey = new Survey.Model({ title: 'Rate your experience – Answer 3 que
         "Yes",
         "No"
         ],
-        name: "Would you like to receive feedback Y or N  ",
-     }
+        name: "feedbackChoice",
+        title: "Would you like to receive feedback?"
+     },
+    {
+        type: "text", name: "ContactDetails", title: "please provide your contact number or email address in order for us to contact you", visibleIf: "{feedbackChoice} == Yes"
+    },
 ]}
 ],
   completedHtml: "<p><h4>Thank you for completing the survey!</h4></p><button onClick={window.location.reload()}>Retake Survey</button>"

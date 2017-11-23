@@ -126,7 +126,7 @@ window.survey = new Survey.Model({ title: 'Rate your experience – Answer 3 que
     },
 ]}
 ],
-  completedHtml: "<p><h4>Thank you for completing the survey!</h4></p><button onClick={window.location.reload()}>Retake Survey</button>"
+  completedHtml: "<p><h3>Thank you for completing the survey!</h3></p><p>To rate another team member<button onClick={window.location.reload()}>click here</button></p>"
 });
 
 
